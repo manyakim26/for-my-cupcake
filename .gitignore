@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules
+node_modules/
+
+# Build artifacts
+/dist/
+/build/
+*.class
+*.o
+*.out
+*.exe
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
