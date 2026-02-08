@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #ff7c7c;
+    --secondary-color: #ffbd69;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: #fef8e6;
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.section {
+    padding: 50px 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+.floating-heart {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(-10px); }
+    100% { transform: translatey(0); }
+}
+
+timeline {
+    position: relative;
+    padding: 20px;
+}
+
+.gallery-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.countdown-timer {
+    font-size: 24px;
+    text-align: center;
+}
+
+.letter-box {
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+.proposal-section {
+    margin: 50px 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 30px;
+}
+
+.confetti {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    .button {
+        width: 100%;
+    }
+}
